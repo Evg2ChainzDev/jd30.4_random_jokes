@@ -1,0 +1,93 @@
+main {
+    height: calc(100vh - 120px);
+    background-color: darkgrey;
+    background-position: center ;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around ;
+}
+
+.norris-img {
+    border-radius: 15px;
+    display: block;
+    position: relative;
+}
+
+
+.shake-img {
+    animation: .3s shake infinite alternate;
+    animation-iteration-count: infinite;
+  }
+
+@keyframes shake {
+    0% {
+      transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+      transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+      transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+      transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+      transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+      transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+      transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+      transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+      transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+      transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+      transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+.laugh-btn {
+    // background-image: url('../../assets/svg/play.svg');
+    background-size: contain;
+    background-repeat: no-repeat;  
+    transition: 0.3s;
+    width: 270px;
+    height: 70px;
+    border: 0px;
+    background-color: rgb(92, 95, 253);
+    cursor: pointer;
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 0px;
+    
+}
+
+.slider-cont {
+  margin-bottom:5%;
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 15px 15px 15px 15px;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+.slider {
+  // position:relative;
+  width: 200px;
+  height: 20px;
+}
+
